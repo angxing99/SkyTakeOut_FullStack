@@ -1,0 +1,60 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-circular-references: true
+  datasource:
+    druid:
+      driver-class-name: ${sky.datasource.driver-class-name}
+      url: jdbc:mysql://${sky.datasource.host}:${sky.datasource.port}/${sky.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: ${sky.datasource.username}
+      password: ${sky.datasource.password}
+  redis:
+    host: ${sky.redis.host}
+    port: ${sky.redis.port}
+    password: ${sky.redis.password}
+    database: ${sky.redis.database}
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+
+mybatis:
+  #mapper configuration
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.sky.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    org.springframework.core.env: DEBUG
+    com:
+      sky:
+        mapper: debug
+        service: info
+        controller: info
+
+sky:
+  jwt:
+    # admin secret key
+    admin-secret-key: itcast
+    # admin jwt expired time
+    admin-ttl: 31536000000
+    admin-token-name: token
+    # user secret key
+    user-secret-key: itheima
+    # user jwt expired time
+    user-ttl: 31536000000
+    user-token-name: authentication
+
+  aws:
+    access-key-id: ${sky.accessKeyId}
+    secret-access-key: ${sky.secretKey}
+    region: ${sky.region}
+    s3:
+      bucketName: ${sky.s3.bucketName}

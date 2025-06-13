@@ -1,0 +1,152 @@
+{
+  "groups": [
+    {
+      "name": "sky.alioss",
+      "type": "com.sky.properties.AliOssProperties",
+      "sourceType": "com.sky.properties.AliOssProperties"
+    },
+    {
+      "name": "sky.aws",
+      "type": "com.sky.properties.S3Properties",
+      "sourceType": "com.sky.properties.S3Properties"
+    },
+    {
+      "name": "sky.aws.s3",
+      "type": "com.sky.properties.S3Properties$S3",
+      "sourceType": "com.sky.properties.S3Properties",
+      "sourceMethod": "getS3()"
+    },
+    {
+      "name": "sky.jwt",
+      "type": "com.sky.properties.JwtProperties",
+      "sourceType": "com.sky.properties.JwtProperties"
+    },
+    {
+      "name": "sky.wechat",
+      "type": "com.sky.properties.WeChatProperties",
+      "sourceType": "com.sky.properties.WeChatProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "sky.alioss.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.AliOssProperties"
+    },
+    {
+      "name": "sky.alioss.access-key-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.AliOssProperties"
+    },
+    {
+      "name": "sky.alioss.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.AliOssProperties"
+    },
+    {
+      "name": "sky.alioss.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.AliOssProperties"
+    },
+    {
+      "name": "sky.aws.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.S3Properties"
+    },
+    {
+      "name": "sky.aws.region",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.S3Properties"
+    },
+    {
+      "name": "sky.aws.s3.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.S3Properties$S3"
+    },
+    {
+      "name": "sky.aws.secret-access-key",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.S3Properties"
+    },
+    {
+      "name": "sky.jwt.admin-secret-key",
+      "type": "java.lang.String",
+      "description": "Admin side JWT Properties",
+      "sourceType": "com.sky.properties.JwtProperties"
+    },
+    {
+      "name": "sky.jwt.admin-token-name",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.JwtProperties"
+    },
+    {
+      "name": "sky.jwt.admin-ttl",
+      "type": "java.lang.Long",
+      "sourceType": "com.sky.properties.JwtProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "sky.jwt.user-secret-key",
+      "type": "java.lang.String",
+      "description": "User side JWT Properties",
+      "sourceType": "com.sky.properties.JwtProperties"
+    },
+    {
+      "name": "sky.jwt.user-token-name",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.JwtProperties"
+    },
+    {
+      "name": "sky.jwt.user-ttl",
+      "type": "java.lang.Long",
+      "sourceType": "com.sky.properties.JwtProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "sky.wechat.api-v3-key",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.WeChatProperties"
+    },
+    {
+      "name": "sky.wechat.appid",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.WeChatProperties"
+    },
+    {
+      "name": "sky.wechat.mch-serial-no",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.WeChatProperties"
+    },
+    {
+      "name": "sky.wechat.mchid",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.WeChatProperties"
+    },
+    {
+      "name": "sky.wechat.notify-url",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.WeChatProperties"
+    },
+    {
+      "name": "sky.wechat.private-key-file-path",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.WeChatProperties"
+    },
+    {
+      "name": "sky.wechat.refund-notify-url",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.WeChatProperties"
+    },
+    {
+      "name": "sky.wechat.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.WeChatProperties"
+    },
+    {
+      "name": "sky.wechat.we-chat-pay-cert-file-path",
+      "type": "java.lang.String",
+      "sourceType": "com.sky.properties.WeChatProperties"
+    }
+  ],
+  "hints": []
+}

@@ -17,7 +17,7 @@ The system supports food browsing, shopping cart, order placement, and real-time
 - **Spring Boot**, **Spring MVC**, **MyBatis + PageHelper**
 - **Redis** for caching
 - **JWT** for authentication
-- **Aliyun OSS** for image storage
+- **Amzon S3 Bucket** for image storage
 - **Swagger / Knife4j** for API documentation
 - **WebSocket** for real-time order notifications
 - **Apache POI** for Excel import/export
@@ -46,6 +46,9 @@ The system supports food browsing, shopping cart, order placement, and real-time
   - Category and dish browsing
   - Shopping cart and order placement
   - Order history and tracking
+ 
+### ☁️ Backend Deployment on AWS EC2 (Docker Compose)
+- The backend is deployed on an AWS EC2 instance using Docker Compose for containerized deployment and easy scalability.
 
 ---
 
@@ -85,6 +88,8 @@ Clone the Kotlin project (not included in this repo).
 Set the backend base URL in Retrofit config.
 
 Open in Android Studio and run on an emulator or device.
+
+
 
 
 
